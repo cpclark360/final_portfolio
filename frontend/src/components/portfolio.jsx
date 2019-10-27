@@ -11,6 +11,9 @@ class Portfolio extends Component {
   
   <div className="projectcontainer">
     <div className="projectview">Preview</div>
+    <div className="projectdesign">
+         tech used
+       </div>
 <div className="projectgit">GitHub</div>
 
     <div className="projectlive">LiveView</div>
@@ -19,6 +22,9 @@ class Portfolio extends Component {
 <div className="container">
   <div className="projectcontainer">
 <div className="projectview">Preview</div>
+<div className="projectdesign">
+         tech used
+       </div>
 <div className="projectgit">GitHub</div>
 
     <div className="projectlive">LiveView</div>
@@ -28,6 +34,9 @@ class Portfolio extends Component {
  <div className="container">
   <div className="projectcontainer">
 <div className="projectview">Preview</div>
+<div className="projectdesign">
+         tech used
+       </div>
 <div className="projectgit">GitHub</div>
 
     <div className="projectlive">LiveView</div>

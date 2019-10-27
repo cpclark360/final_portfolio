@@ -659,9 +659,10 @@ textarea {
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: repeat(3,1fr);
   grid-template-areas:
-    "a a "
-    "a a "
-    "b c ";
+  "a a "
+  "a a "
+  "b b"
+  "c d ";
 /*   border: black solid 1px; */
   width: 320px;
   height: 300px;
@@ -677,7 +678,7 @@ textarea {
 /*   border: solid 1px black; */
   margin-bottom:6px;
   text-align: center;
-  
+  width:19.4rem;
   vertical-align: middle;
   height: 12rem;
   line-height: 12rem; /* matches  height*/
@@ -701,12 +702,12 @@ textarea {
 }
 
 .projectgit {
-  grid-area: b;
+  grid-area: c;
 /*   border: solid 1px black; */
   margin-right: 6px;
   text-align: center;
   height:6.3rem;
-  width:9.9rem;
+  width:9.4rem;
   font-weight:bold;
   font-size: 1.4rem;
   color: gray;
@@ -722,13 +723,34 @@ textarea {
  
 }
 
+.projectdesign {
+  grid-area: b;
+/*   border: solid 1px black; */
+  margin-right: 6px;
+  text-align: center;
+  height:3.67rem;
+  line-height:3.67rem;
+  width:19.1rem;
+  font-weight:bold;
+  font-size: 1.1rem;
+  color: gray;
+  line-height: 6.3rem;
+  vertical-align: middle;
+  background: #ffffff;
+  vertical-align: middle;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 10px 6px -6px #777;
+  
+
+} 
 
 .projectlive {
-  grid-area: c;
+  grid-area: d;
 /*   border: solid 1px black; */
   text-align: center;
   height:6.3rem;
-  width:9.9rem;
+  width:9.4rem;
   line-height: 6.3rem;
   font-weight:bold;
   font-size: 1.4rem;
@@ -739,8 +761,6 @@ textarea {
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 10px 6px -6px #777;
-
-
  
 }
 
@@ -787,5 +807,4 @@ img {
   display:grid;
 
 }
-
 
