@@ -440,6 +440,14 @@ Skills Section
  
 }
 
+.skills_projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  grid-template-rows:repeat(auto-fit,minmax(20px, 1fr));
+  grid-gap: .1rem;
+ 
+}
+
 .skill {
   display: flex;
   vertical-align: middle;
@@ -726,6 +734,7 @@ textarea {
 .projectdesign {
   grid-area: b;
 /*   border: solid 1px black; */
+  
   margin-right: 6px;
   text-align: center;
   height:3.67rem;
