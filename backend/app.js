@@ -22,17 +22,7 @@ app.get("/", (req, res) => res.send("Hello world!"));
 
 app.use("/api/contacts", contacts);
 
-// Serve Static Assets in production
-
-//set static folder
-
-app.use(express.static("frontend/build"));
-
-app.get("*", (req, res) => {
-
-    res.sendFile(path.resolve(__dirname, “frontend”, “build”, “index.html”));
-});
-
 const port = process.env.PORT || 8082;
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
+
