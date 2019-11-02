@@ -1,5 +1,7 @@
 const express = require("express");
 const connectDB = require("./config/db");
+const path = require();
+
 let cors = require("cors");
 
 //npm run app
@@ -22,7 +24,16 @@ app.get("/", (req, res) => res.send("Hello world!"));
 
 app.use("/api/contacts", contacts);
 
+// Serve static assets in build folder if we are in production
+if (process.env.NODE_ENV === "production") {
+  //  Set static folder
+  app.use(express.static("frontend/build"));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname), "client", "build", "index.html");
+  });
+}
+
 const port = process.env.PORT || 8082;
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
-
